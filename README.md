@@ -24,4 +24,5 @@ npm run dev
 ```
 
 ## Ekran Goruntusu
-![Uygulama Ekran Görüntüsü](./src/assets/Screenshot.PNG)
+
+![Uygulama Ekran Görüntüsü](./src/assets/Screenshot.png)
