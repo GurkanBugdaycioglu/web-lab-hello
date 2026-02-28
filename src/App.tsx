@@ -6,7 +6,7 @@ function App() {
       <h2>LAB-1</h2>
       <p>Ad Soyadi: Gürkan Buğdaycıoğlu</p>
       <p>Ogrenci No: 200541048</p>
-	  <p>Universite: Fırat Üniversitesi<p>
+	  <p>Universite: Fırat Üniversitesi</p>
     </div>
   )
 }
