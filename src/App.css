@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #38a3dc;
+  color: #ffffff; /* Arka plan açık renk olduğu için yazı rengini koyulaştırdık */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,6 +47,15 @@
 
 .card {
   padding: 2em;
+  background-color: #242424; /* Kartın arka planı */
+  border-radius: 12px;       /* Köşeleri yuvarla */
+  border: 1px solid #3f3f3f; /* Hafif bir çerçeve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Üzerine gelince hafifçe yukarı kaysın */
 }
 
 .read-the-docs {
