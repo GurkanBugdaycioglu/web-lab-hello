@@ -5,7 +5,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #38a3dc;
-  color: #ffffff; /* Arka plan açık renk olduğu için yazı rengini koyulaştırdık */
+  color: #ffffff;
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
@@ -47,15 +47,15 @@ body {
 
 .card {
   padding: 2em;
-  background-color: #242424; /* Kartın arka planı */
-  border-radius: 12px;       /* Köşeleri yuvarla */
-  border: 1px solid #3f3f3f; /* Hafif bir çerçeve */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+  background-color: #242424;
+  border-radius: 12px;
+  border: 1px solid #3f3f3f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Üzerine gelince hafifçe yukarı kaysın */
+  transform: translateY(-5px);
 }
 
 .read-the-docs {
