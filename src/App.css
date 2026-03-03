@@ -5,7 +5,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #38a3dc;
+  background-color: #294dfff1;
   color: #ffffff;
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -25,10 +25,10 @@ body {
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #294dfff1);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #294dfff1);
 }
 
 @keyframes logo-spin {
