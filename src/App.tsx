@@ -5,6 +5,7 @@ function App() {
       <h2>LAB-1</h2>
       <p>Ad Soyad: Gürkan Buğdaycıoğlu</p>
       <p>Öğrenci No: 200541048</p>
+      <p>Bölümü: Yazılım Mühendisliği</p>
     </div>
   )
 }
