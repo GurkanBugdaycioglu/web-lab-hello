@@ -1,4 +1,7 @@
- /* Genel sifirlama */
+@import './styles/tokens.css';
+@import './styles/pages.css';
+@import './styles/navbar.css';
+/* Genel sifirlama */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; line-height: 1.6; }
 
