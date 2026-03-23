@@ -1,6 +1,7 @@
 @import './styles/tokens.css';
 @import './styles/pages.css';
 @import './styles/navbar.css';
+@import './styles/kart.css';
 /* Genel sifirlama */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; line-height: 1.6; }
