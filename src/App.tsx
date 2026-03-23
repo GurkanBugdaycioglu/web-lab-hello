@@ -5,6 +5,7 @@ function App() {
     <a href="#main-content" class="skip-link">
       <p>Ana içeriğe atla</p>
     </a>
+    
     <header>
       <nav aria-label="Ana navigasyon">
         <ul>
@@ -14,19 +15,60 @@ function App() {
         </ul>
       </nav>
     </header>
+
     <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
           <p>Merhaba, benim adım Gürkan Buğdaycıoğlu. Fırat Üniversitesi Teknoloji Fakültesi Yazılım Mühendisliği bölümünde okuyorum.</p>
         </section>
+
         <section id="projeler">
           <h2>Projelerim</h2>
-          <p></p>
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="proje1.jpg"
+              alt="E-Ticaret sitesi anasayfa ekran goruntusu" />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>React ve Node.js ile gelistirilmis
+                tam kapsamli bir e-ticaret uygulamasi.</p>
+                <ul class="skill-tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                </ul>
+            </article>
+            
+            <article class="project-card">
+              <img src="proje2.jpg"
+              alt="Blog uygulamasi yazi listesi gorunumu" />
+              <h3>Blog Uygulamasi</h3>
+              <p>Kisisel blog platformu.
+                Markdown destekli yazi editoru.</p>
+                <ul class="skill-tags">
+                  <li>TypeScript</li>
+                  <li>Next.js</li>
+                </ul>
+            </article>
+            
+            <article class="project-card">
+              <img src="proje3.jpg"
+              alt="Hava durumu uygulamasi arayuzu" />
+              <h3>Hava Durumu</h3>
+              <p>OpenWeather API ile anlik
+                hava durumu bilgisi.</p>
+                <ul class="skill-tags">
+                  <li>JavaScript</li>
+                  <li>API</li>
+                </ul>
+            </article>
+          </div>
         </section>
+
         <section id="iletisim">
           <h2>Iletisim</h2>
           <p></p>
         </section>
+
         <form action="#" method="POST" novalidate>
           <fieldset>
             <legend>Iletisim Formu</legend>
@@ -77,9 +119,11 @@ function App() {
           </fieldset>
         </form>
     </main>
+
     <footer>
         <p>&copy; 2026 Gürkan Buğdaycıoğlu. Tüm hakları saklıdır.</p>
     </footer>
+
     </>
   )
 }
