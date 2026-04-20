@@ -1,25 +1,40 @@
+/* index.css */
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-primary: #cccccc;
-  --color-secondary: #aaaaaa;
-  --color-accent: #7C3AED;
-  --color-surface: #bbbbbb;
-  --color-muted: #444444;
-  --color-error: #DC2626;
-  --color-success: #16A34A;
-  
-  --font-family-sans: system-ui,-apple-system,
-                      sans-serif;
+  /* Tailwind v4 temasına projenin tüm renklerini buraya kaydediyoruz */
+  --color-bg-light: #fafafa; /* zinc-50 civarı */
+  --color-bg-dark: #09090b;  /* zinc-950 (App.jsx ile aynı) */
+  --color-text-main: #000000;
+}
 
-  --font-family-mono: 'Fira Code', 'Consolas',
-                      monospace;
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+  }
 
+  /* .dark sınıfı geldiğinde body otomatik güncellenir */
+  :where(.dark) body {
+    background-color: var(--color-bg-dark);
+    --color-text-main: #fafafa;
+  }
+}
+
+  *, *::before, *::after {
+  /* Sadece renk odaklı özellikleri senkronize ediyoruz */
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-duration: 500ms !important; /* Hepsini 500ms'ye sabitledik */
+  transition-timing-function: ease-in-out !important; /* Aynı ivme */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
+    --text: #fafafa;;
+    --text-h: #fafafa;;
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
@@ -34,10 +49,6 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
-}
-
-body {
-  margin: 0;
 }
 
 #root {
@@ -56,7 +67,6 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
 }
 
 h1 {
