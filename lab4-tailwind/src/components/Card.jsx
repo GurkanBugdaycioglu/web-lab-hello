@@ -45,16 +45,3 @@ export default function Card({
         </div>
     );
 }
-
-<><Card variant="elevated" title="Proje A"
-    image="proje.jpg"
-    imageAlt="Proje ekran goruntusu">
-    <p>Bu bir elevated (golgelii) kart.</p>
-</Card>
-<Card variant="outlined" title="Proje B">
-    <p>Bu bir outlined (cerceveli) kart.</p>
-</Card>
-<Card variant="filled" title="Proje C"
-    footer={<Button size="sm">Detay</Button>}>
-    <p>Bu bir filled (dolgulu) kart.</p>
-</Card></>

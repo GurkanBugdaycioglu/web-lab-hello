@@ -46,17 +46,3 @@ export default function Alert({
         </div>
     );
 }
-
-<><Alert variant="info" title="Bilgi">
-    Formunuz basariyla kaydedildi.
-</Alert>
-<Alert variant="success" title="Basarili">
-    Islem tamamlandi!
-</Alert>
-<Alert variant="warning" title="Uyari">
-    Oturum 5 dakika sonra sona erecek.
-</Alert>
-<Alert variant="error" title="Hata" dismissible
-        onDismiss={() => console.log('kapatildi')}>
-    Baglanti kurulamadi. Tekrar deneyin.
-</Alert></>

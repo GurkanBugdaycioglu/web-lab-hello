@@ -55,12 +55,3 @@ export default function Input({
         </div>
     );
 }
-
-<><Input id="name" label="Ad Soyad"
-    placeholder="Ahmet Yilmaz" />
-<Input id="email" label="E-posta" type="email"
-    helpText="Ornek: ad@mail.com" />
-<Input id="pass" label="Sifre" type="password"
-    error="En az 8 karakter olmali" />
-<Input id="disabled" label="Devre Disi"
-    disabled value="Duzenlenemez" /></>
